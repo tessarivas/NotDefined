@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@theme {
+  --font-regular-text: 'Montserrat-Regular', sans-serif;
+  --font-title-text: 'Montserrat-SemiBold', sans-serif;
+  --font-accent-text: 'CrimsonPro-SemiBold', serif;
+}
+
 @plugin "daisyui/theme" {
   name: "mytheme";
   default: true;
@@ -10,17 +16,17 @@
   --color-base-200: oklch(97% 0.001 106.424);
   --color-base-300: oklch(92% 0.003 48.717);
   --color-base-content: oklch(21% 0.006 56.043);
-  --color-primary: oklch(39% 0.095 152.535);
+  --color-primary: #008033;
   --color-primary-content: oklch(98% 0.001 106.423);
-  --color-secondary: oklch(26% 0.051 172.552);
+  --color-secondary: #0c542c;
   --color-secondary-content: oklch(98% 0.001 106.423);
-  --color-accent: oklch(70% 0.01 56.259);
+  --color-accent: #4f4f4f;
   --color-accent-content: oklch(14% 0.004 49.25);
-  --color-neutral: oklch(21% 0.006 56.043);
+  --color-neutral: #423d37;
   --color-neutral-content: oklch(98% 0.001 106.423);
   --color-info: oklch(58% 0.158 241.966);
   --color-info-content: oklch(97% 0.013 236.62);
-  --color-success: oklch(59% 0.145 163.225);
+  --color-success: #7acc00;
   --color-success-content: oklch(97% 0.021 166.113);
   --color-warning: oklch(64% 0.222 41.116);
   --color-warning-content: oklch(98% 0.016 73.684);

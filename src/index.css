@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('src/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('src/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'CrimsonPro-SemiBold';
+    src: url('src/assets/fonts/CrimsonPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  

@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css'
 import App from './App.jsx'
-import Home from './pages/home.jsx'
-import Iniciatives from './pages/initiatives.jsx';
-import Legislators from './pages/legislators.jsx';
+import Home from './pages/home.jsx';
+import Iniciatives from './pages/Initiatives.jsx';
+import Legislators from './pages/Legislators.jsx';
 
 const root = document.getElementById("root");
 
