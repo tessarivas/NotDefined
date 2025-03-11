@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className="min-h-screen flex flex-col items-center justify-center bg-base-100 text-base-content">
+        <h1 className="text-4xl font-bold text-primary">Color Primario</h1>
+        <p className="text-secondary">Este es el color secundario</p>
+        <button className="px-4 py-2 mt-4 bg-accent text-accent-content rounded-[var(--radius-box)] border-[var(--border)]">
+          Botón con color de acento
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <div className="mt-4 p-4 bg-error text-error-content rounded-[var(--radius-field)]">
+          Mensaje de error
+        </div>
+        <div className="mt-4 p-4 bg-success text-success-content rounded-[var(--radius-box)]">
+          Mensaje de éxito
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
