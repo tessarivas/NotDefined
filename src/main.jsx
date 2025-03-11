@@ -11,7 +11,7 @@ const root = document.getElementById("root");
 
 createRoot(root).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename="/NotDefined">
             <Routes>
                 <Route path="/" element={<App />}>
                     <Route index element={<Home />} />
