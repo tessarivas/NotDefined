@@ -6,7 +6,7 @@ export const Metrics = () => {
   ];
 
   return (
-    <div className="p-6 mt-10 g max-w-6xl mx-auto text-center">
+    <div className="p-6 mt-10 mb-15 g max-w-6xl mx-auto text-center">
       <h2 className="text-2xl lg:text-4xl font-title-text text-neutral mb-10">
         Impacto y Beneficios
       </h2>
