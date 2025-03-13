@@ -1,73 +1,14 @@
-export const Dashboard = () => {
-  const initiatives = [
-    {
-      description:
-        "Por el que se reforma la fracción VII del artículo 27 de la Ley para Prevenir y Erradicar la Discriminación en el Estado de Baja California",
-      type: "Iniciativa de Reforma",
-      presented_by: "Adrian Humberto Valle Ballesteros",
-      group: "PRI",
-      date: "2025/03/13",
-      color: "btn-error",
-      stage: "Idea",
-    },
-    {
-      description:
-        "Por el que se adiciona el artículo 145 BIS al Código Penal para el Estado de Baja California, en materia de protección a adultos mayores",
-      type: "Iniciativa de Adición",
-      presented_by: "María del Rocío Adame Muñoz",
-      group: "MORENA",
-      date: "2025/03/12",
-      color: "btn-warning",
-      stage: "Mesa directiva",
-    },
-    {
-      description:
-        "Por el que se reforman los artículos 4 y 8 de la Ley de Educación del Estado de Baja California, en materia de educación ambiental",
-      type: "Iniciativa de reforma",
-      presented_by: "Dunnia Montserrat Murillo López",
-      group: "MORENA",
-      date: "2025/03/11",
-      color: "btn-success",
-      stage: "Comision",
-    },
-    {
-      description:
-        "Por el que se reforma el artículo 7 de la Ley de Fomento a la Competitividad y Desarrollo Económico para el Estado de Baja California",
-      type: "Iniciativa de reforma",
-      presented_by: "Santa Alejandrina Corral Quintero",
-      group: "PAN",
-      date: "2025/03/10",
-      color: "btn-primary",
-      stage: "Juridico",
-    },
-    {
-      description:
-        "Por el que se reforman y adicionan diversas disposiciones de la Ley de Protección al Ambiente para el Estado de Baja California",
-      type: "Iniciativa de reforma",
-      presented_by: "Julio César Vázquez Castillo",
-      group: "PT",
-      date: "2025/03/09",
-      color: "btn-info",
-      stage: "Comision",
-    },
-    {
-      description:
-        "Por el que se reforman y adicionan diversas disposiciones de la Ley de Protección al Ambiente para el Estado de Baja California",
-      type: "Iniciativa de reforma",
-      presented_by: "Julio César Vázquez Castillo",
-      group: "PT",
-      date: "2025/03/09",
-      color: "btn-neutral",
-      stage: "Pleno",
-    }
-  ];
+import allInitiatives from "../assets/initiatives.js";
+
+export const Dashboard = ({ limit, initiatives = allInitiatives }) => {
+  const displayedInitiatives = limit
+    ? initiatives.slice(0, limit)
+    : initiatives;
 
   return (
-    <div className="p-6 mt-10 max-w-6xl mx-auto">
-      <h2 className="text-2xl lg:text-3xl font-title-text text-center text-neutral mb-10">
-        Últimas Iniciativas y Dictámenes
-      </h2>
-      <div className="mt-4 border rounded-lg overflow-hidden shadow-md font-regular-text">
+    <div className="p-6 max-w-6xl mx-auto">
+
+      <div className=" border rounded-lg overflow-hidden shadow-md font-regular-text">
         <div className="overflow-x-auto">
           <table className="table w-full">
             <thead>
@@ -81,7 +22,7 @@ export const Dashboard = () => {
               </tr>
             </thead>
             <tbody>
-              {initiatives.map((item, index) => (
+              {displayedInitiatives.map((item, index) => (
                 <tr key={index} className="hover:bg-gray-50">
                   <td className="px-4 py-3">{item.description}</td>
                   <td className="px-4 py-3 text-center">{item.type}</td>

@@ -10,7 +10,7 @@ function Home() {
     <>
       <Hero />
       <Intro />
-      <Dashboard />
+      <Dashboard limit={6} />
       <Metrics />
       <Footer />
       <Outlet />
