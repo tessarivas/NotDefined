@@ -77,6 +77,9 @@ const manejarRegistro = (e) => {
           <br /> Minimo una letra mayuscula
         </p>
       )}
+      <legend className="fieldset-legend">Sube tu INE</legend>
+      <input type="file" className="file-input" />
+      <label className="fieldset-label">Tamaño máximo 2MB</label>
       <button className="btn btn-neutral mt-4" onClick={manejarRegistro}>Registrarme</button>
     </fieldset>
   );
