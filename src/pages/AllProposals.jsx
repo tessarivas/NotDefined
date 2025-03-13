@@ -37,7 +37,7 @@ export const AllProposals = () => {
 
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-center text-2xl font-semibold text-gray-800 mt-6 mb-4">
+      <h1 className="align-middle text-center text-2xl lg:text-4xl font-title-text font-bold text-secondary  mt-6 mb-4">
         Todas las propuestas
       </h1>
       <div className="ml-19 mr-19 flex mt-7 justify-between items-center gap-4 max-w-6xl mx-auto bg-white p-4 rounded-lg shadow-sm">
@@ -126,8 +126,7 @@ export const AllProposals = () => {
           Siguiente
         </button>
         <div className="ml-77 text-sm text-gray-600 whitespace-nowrap">
-          Mostrando {Math.min(limit, filteredInitiatives.length)} de{" "}
-          {filteredInitiatives.length} iniciativas
+          Total: {filteredInitiatives.length} iniciativas
         </div>
       </div>
     </div>
