@@ -37,7 +37,7 @@ export const Intro = () => {
           </div>
           <div className="relative flex flex-col items-center gap-2">
             <FaBalanceScale className="text-success text-4xl" />
-            <span className="text-lg font-bold text-success">Comisión</span>
+            <span className="text-lg font-bold text-success">Comisión Previa</span>
           </div>
           <div className="relative flex flex-col items-center gap-2">
             <FaGavel className="text-primary text-4xl" />
