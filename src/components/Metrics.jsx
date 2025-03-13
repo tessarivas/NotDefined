@@ -21,11 +21,13 @@ export const Metrics = () => {
         ))}
       </div>
       <p className="mt-6 text-accent font-regular-text text-sm md:text-base max-w-4xl mx-auto">
-        La transparencia en la legislación es clave para una democracia fuerte.
-        Nuestra plataforma utiliza tecnología blockchain para garantizar la
-        seguridad, accesibilidad e integridad de la información legislativa.
-        Conoce cómo está transformando el seguimiento de iniciativas y
-        dictámenes.
+        La transparencia en las etapas del proceso legislativo es esencial para
+        una democracia sólida. Nuestra plataforma te permite seguir el avance de
+        las iniciativas desde su llegada al Congreso hasta su votación final en
+        el pleno. Usamos tecnología blockchain para garantizar que cada paso del
+        proceso sea seguro, accesible e íntegro. Conoce cómo estamos
+        transformando la forma en que las iniciativas progresan a través de cada
+        etapa del Congreso.
       </p>
     </div>
   );

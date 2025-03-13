@@ -3,22 +3,20 @@ export const Footer = () => {
       <>
         <footer className="footer sm:footer-horizontal text-base-content p-4 font-regular-text">
           <aside>
-            <p className="text-2xl lg:text-4xl font-title-text text-secondary pl-10">
+            <p className="text-2xl lg:text-4xl font-title-text font-bold text-secondary pl-10">
               Garantizando acceso a información <br />
               confiable y verificable mediante <br />
               tecnología blockchain. <br />
             </p>
           </aside>
           <nav>
-            <h6 className="footer-title">Iniciativas</h6>
-            <a className="link link-hover">Todas</a>
-            <a className="link link-hover">Estado</a>
-            <a className="link link-hover">Periodo</a>
+            <h6 className="footer-title">Propuestas</h6>
+            <a className="link link-hover">Todo</a>
+            <a className="link link-hover">Etapa</a>
           </nav>
           <nav>
-            <h6 className="footer-title">Legisladores</h6>
-            <a className="link link-hover">Todos</a>
-            <a className="link link-hover">Periodo</a>
+            <h6 className="footer-title">Proponer</h6>
+            <a className="link link-hover">Registrar mi idea</a>
           </nav>
           <nav>
             <h6 className="footer-title">Contacto</h6>

@@ -11,7 +11,7 @@ export const Hero = () => {
       <img
         src={BannerPicture}
         alt="Banner"
-        className="absolute inset-0 w-full h-full object-cover brightness-50"
+        className="absolute inset-0 w-full h-full object-cover brightness-30"
       />
 
       <div className="relative flex flex-col items-center justify-center h-full text-center text-neutral-content">
@@ -19,7 +19,7 @@ export const Hero = () => {
           Blockchain para una Legislación Transparente
         </h1>
         <p className="mb-5 text-2xl drop-shadow-lg font-regular-text">
-          Accede, verifica y confía en la información legislativa como nunca antes.
+          Transparencia en cada paso: sigue el camino de tu iniciativa.
         </p>
         <Link
           to={isLoggedIn ? "/legislators" : "/register"}

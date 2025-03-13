@@ -20,11 +20,11 @@ export const Intro = () => {
       </div>
 
       {/* Título */}
-      <h2 className="text-5xl text-center text-neutral font-title-text pt-7">
+      <h2 className="text-4xl text-center text-neutral font-title-text pt-7">
         Etapas del Proceso Legislativo
       </h2>
 
-      <div className="w-full max-w-4xl flex flex-col items-center font-regular-text font-bold">
+      <div className="w-full max-w-4xl flex flex-col items-center font-regular-text font-bold pt-2">
         <div className="w-full flex justify-between items-center relative py-4">
           <div className="absolute w-full border-t-4 border-dashed border-gray-300 top-1/2 left-0 -translate-y-1/2"></div>
           <div className="relative flex flex-col items-center gap-2">
