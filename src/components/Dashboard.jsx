@@ -1,78 +1,100 @@
 export const Dashboard = () => {
   const initiatives = [
     {
-      title: "Que reforma el primer párrafo del artículo 18-A de la Ley Federal de Derechos.",
-      state: "Activa",
-      period: "1er Periodo\nSept24-Dic24",
-      date: "18/09/2024",
-      color: "btn-success",
-    },
-    {
-      title: "Que reforma, adiciona y deroga diversas disposiciones de la Ley Federal de Armas de Fuego y Explosivos.",
-      state: "Dictaminada",
-      period: "1er Periodo Com.\nDic24-Feb25",
-      date: "10/12/2024",
-      color: "btn-info",
-    },
-    {
-      title: "Que reforma, adiciona y deroga diversas disposiciones de la Ley del Impuesto Especial sobre Producción y Servicios, a fin de cambiar el ...",
-      state: "Desecha",
-      period: "1er Periodo\nSept24-Dic24",
-      date: "27/09/2024",
-      color: "btn-warning",
-    },
-    {
-      title: "Que reforma y adiciona diversas disposiciones de la Ley Federal del Trabajo, en materia del derecho al descanso de las personas trabaja ...",
-      state: "Retirada",
-      period: "2do Periodo\nFeb25-Abr25",
-      date: "12/02/2025",
+      description:
+        "Por el que se reforma la fracción VII del artículo 27 de la Ley para Prevenir y Erradicar la Discriminación en el Estado de Baja California",
+      type: "Iniciativa de Reforma",
+      presented_by: "Adrian Humberto Valle Ballesteros",
+      group: "PRI",
+      date: "2025/03/13",
       color: "btn-error",
+      stage: "Idea",
     },
     {
-      title: "Que reforma los artículos 154 y 162 de la Ley del Seguro Social, para reducir de 750 a 500 las semanas de cotización a las personas adul...",
-      state: "Activa",
-      period: "1er Periodo\nSept24-Dic24",
-      date: "03/10/2024",
-      color: "btn-success",
+      description:
+        "Por el que se adiciona el artículo 145 BIS al Código Penal para el Estado de Baja California, en materia de protección a adultos mayores",
+      type: "Iniciativa de Adición",
+      presented_by: "María del Rocío Adame Muñoz",
+      group: "MORENA",
+      date: "2025/03/12",
+      color: "btn-warning",
+      stage: "Mesa directiva",
     },
+    {
+      description:
+        "Por el que se reforman los artículos 4 y 8 de la Ley de Educación del Estado de Baja California, en materia de educación ambiental",
+      type: "Iniciativa de reforma",
+      presented_by: "Dunnia Montserrat Murillo López",
+      group: "MORENA",
+      date: "2025/03/11",
+      color: "btn-success",
+      stage: "Comision",
+    },
+    {
+      description:
+        "Por el que se reforma el artículo 7 de la Ley de Fomento a la Competitividad y Desarrollo Económico para el Estado de Baja California",
+      type: "Iniciativa de reforma",
+      presented_by: "Santa Alejandrina Corral Quintero",
+      group: "PAN",
+      date: "2025/03/10",
+      color: "btn-primary",
+      stage: "Juridico",
+    },
+    {
+      description:
+        "Por el que se reforman y adicionan diversas disposiciones de la Ley de Protección al Ambiente para el Estado de Baja California",
+      type: "Iniciativa de reforma",
+      presented_by: "Julio César Vázquez Castillo",
+      group: "PT",
+      date: "2025/03/09",
+      color: "btn-info",
+      stage: "Comision",
+    },
+    {
+      description:
+        "Por el que se reforman y adicionan diversas disposiciones de la Ley de Protección al Ambiente para el Estado de Baja California",
+      type: "Iniciativa de reforma",
+      presented_by: "Julio César Vázquez Castillo",
+      group: "PT",
+      date: "2025/03/09",
+      color: "btn-neutral",
+      stage: "Pleno",
+    }
   ];
 
   return (
     <div className="p-6 mt-10 max-w-6xl mx-auto">
-      <h2 className="text-2xl lg:text-4xl font-title-text text-center text-neutral mb-10">
+      <h2 className="text-2xl lg:text-3xl font-title-text text-center text-neutral mb-10">
         Últimas Iniciativas y Dictámenes
       </h2>
       <div className="mt-4 border rounded-lg overflow-hidden shadow-md font-regular-text">
         <div className="overflow-x-auto">
           <table className="table w-full">
             <thead>
-              <tr className="bg-secondary text-white text-0xl lg:text-2xl">
-                <th>Iniciativas</th>
-                <th>Estado</th>
-                <th>Periodo</th>
-                <th>Fecha</th>
-                <th>Dictámenes</th>
+              <tr className="bg-secondary text-white text-sm lg:text-base">
+                <th className="w-2/5 px-4 py-2 text-center">Descripción</th>
+                <th className="w-1/8 px-4 py-2 text-center">Tipo</th>
+                <th className="w-1/6 px-4 py-2 text-center">Presentado por</th>
+                <th className="w-1/8 px-4 py-2 text-center">Grupo</th>
+                <th className="w-1/8 px-4 py-2 text-center">Fecha</th>
+                <th className="w-1/8 px-4 py-2 text-center">Etapa</th>
               </tr>
             </thead>
             <tbody>
               {initiatives.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.title}</td>
-                  <td>
-                    <button className={`btn ${item.color}`}>{item.state}</button>
-                  </td>
-                  <td className="whitespace-pre-line">{item.period}</td>
-                  <td>{item.date}</td>
-                  {index === 0 && (
-                    <td
-                      rowSpan={initiatives.length}
-                      className="text-center align-middle"
+                <tr key={index} className="hover:bg-gray-50">
+                  <td className="px-4 py-3">{item.description}</td>
+                  <td className="px-4 py-3 text-center">{item.type}</td>
+                  <td className="px-4 py-3 text-center">{item.presented_by}</td>
+                  <td className="px-4 py-3 text-center">{item.group}</td>
+                  <td className="px-4 py-3 text-center">{item.date}</td>
+                  <td className="px-4 py-3 text-center">
+                    <button
+                      className={`w-32 py-5 rounded-lg text-sm font-medium btn ${item.color}`}
                     >
-                      <div className="bg-primary text-white text-4xl font-bold rounded-lg w-28 h-28 flex items-center justify-center mx-auto">
-                        15
-                      </div>
-                    </td>
-                  )}
+                      {item.stage}
+                    </button>
+                  </td>
                 </tr>
               ))}
             </tbody>
