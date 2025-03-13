@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userPhoto, setUserPhoto] = useState(""); // Aquí podrías obtener la URL real de la foto
+  const [userPhoto, setUserPhoto] = useState("");
 
-  // Simulación de iniciar/cerrar sesión
   const toggleLogin = () => {
     if (isLoggedIn) {
       setIsLoggedIn(false);
       setUserPhoto("");
     } else {
       setIsLoggedIn(true);
-      setUserPhoto("https://via.placeholder.com/40"); // Reemplazar con foto real del usuario
+      setUserPhoto("https://via.placeholder.com/40");
     }
   };
 
