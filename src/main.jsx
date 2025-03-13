@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css'
 import App from './App.jsx'
 import Home from './pages/home.jsx';
-import Iniciatives from './pages/Initiatives.jsx';
-import Legislators from './pages/Legislators.jsx';
+import Proposals from './pages/Proposals.jsx';
+import RegisterIdeas from './pages/RegisterIdea.jsx';
 import Register from './pages/Register.jsx';
 import Login from './pages/Login.jsx';
 
@@ -17,8 +17,8 @@ createRoot(root).render(
             <Routes>
                 <Route path="/" element={<App />}>
                     <Route index element={<Home />} />
-                    <Route path="iniciatives" element={<Iniciatives />} />
-                    <Route path="legislators" element={<Legislators />} />
+                    <Route path="proposals" element={<Proposals />} />
+                    <Route path="registerIdeas" element={<RegisterIdeas />} />
                     <Route path="register" element={<Register />} />
                     <Route path="login" element={<Login />} />
                 </Route>

@@ -22,7 +22,7 @@ export const Hero = () => {
           Transparencia en cada paso: sigue el camino de tu iniciativa.
         </p>
         <Link
-          to={isLoggedIn ? "/legislators" : "/register"}
+          to={isLoggedIn ? "/registerIdeas" : "/register"}
           className="btn btn-primary px-6 py-3 text-lg font-semibold"
         >
           {isLoggedIn ? "¡Registra tu idea!" : "Regístrate ahora"}

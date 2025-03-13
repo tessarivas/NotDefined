@@ -44,10 +44,10 @@ export const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to="/iniciatives">Propuestas</Link>
+              <Link to="/proposals">Propuestas</Link>
             </li>
             <li>
-              <Link to="/legislators">Registrar Idea</Link>
+              <Link to="/registerIdeas">Registrar Idea</Link>
             </li>
           </ul>
         </div>
@@ -59,10 +59,10 @@ export const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-semibold gap-2.5">
           <li className="text-primary-content">
-            <Link to="/iniciatives">Propuestas</Link>
+            <Link to="/proposals">Propuestas</Link>
           </li>
           <li className="text-primary-content">
-            <Link to="/legislators">Registrar mi idea</Link>
+            <Link to="/registerIdeas">Registrar mi idea</Link>
           </li>
         </ul>
       </div>
