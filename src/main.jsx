@@ -8,6 +8,7 @@ import Proposals from './pages/AllProposals.jsx';
 import SelectedProposal from './pages/SelectedProposal.jsx';
 import RegisterIdeas from './pages/IdeaRegister.jsx';
 import Register from './pages/Register.jsx';
+import Tutorial from './pages/Tutorial.jsx';    
 import Login from './pages/Login.jsx';
 
 const root = document.getElementById("root");
@@ -23,6 +24,7 @@ createRoot(root).render(
                     <Route path="registerIdeas" element={<RegisterIdeas />} />
                     <Route path="register" element={<Register />} />
                     <Route path="login" element={<Login />} />
+                    <Route path="tutorial" element={<Tutorial />} />
                 </Route>
             </Routes>
         </BrowserRouter>
