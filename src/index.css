@@ -21,3 +21,21 @@
     font-style: normal;
   }
   
+  
+/* Asegura que el cuerpo del documento y la raíz de la aplicación ocupen el 100% del alto */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Establece que el contenedor principal tenga un alto mínimo del 100% */
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegura que el footer quede al final */
+footer {
+  margin-top: auto;
+}
