@@ -7,8 +7,8 @@ export const Dashboard = () => {
       presented_by: "Adrian Humberto Valle Ballesteros",
       group: "PRI",
       date: "2025/03/13",
-      color: "btn-success",
-      stage: "Mesa Directiva",
+      color: "btn-error",
+      stage: "Idea",
     },
     {
       description:
@@ -18,7 +18,7 @@ export const Dashboard = () => {
       group: "MORENA",
       date: "2025/03/12",
       color: "btn-warning",
-      stage: "Comisiones",
+      stage: "Mesa directiva",
     },
     {
       description:
@@ -27,8 +27,8 @@ export const Dashboard = () => {
       presented_by: "Dunnia Montserrat Murillo López",
       group: "MORENA",
       date: "2025/03/11",
-      color: "btn-error",
-      stage: "Juridico",
+      color: "btn-success",
+      stage: "Comision",
     },
     {
       description:
@@ -37,8 +37,8 @@ export const Dashboard = () => {
       presented_by: "Santa Alejandrina Corral Quintero",
       group: "PAN",
       date: "2025/03/10",
-      color: "btn-warning",
-      stage: "Pleno",
+      color: "btn-primary",
+      stage: "Juridico",
     },
     {
       description:
@@ -47,8 +47,18 @@ export const Dashboard = () => {
       presented_by: "Julio César Vázquez Castillo",
       group: "PT",
       date: "2025/03/09",
-      color: "btn-success",
-      stage: "Mesa Directiva",
+      color: "btn-info",
+      stage: "Comision",
+    },
+    {
+      description:
+        "Por el que se reforman y adicionan diversas disposiciones de la Ley de Protección al Ambiente para el Estado de Baja California",
+      type: "Iniciativa de reforma",
+      presented_by: "Julio César Vázquez Castillo",
+      group: "PT",
+      date: "2025/03/09",
+      color: "btn-neutral",
+      stage: "Pleno",
     }
   ];
 
