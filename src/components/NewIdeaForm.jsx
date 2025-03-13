@@ -2,7 +2,7 @@ export const NewIdeaForm = () => {
     return (
       <div className="flex items-center justify-center min-h-screen bg-base-200">
         <fieldset className="w-full max-w-3xl bg-base-100 shadow-lg rounded-box p-6 space-y-4 border border-base-300">
-          <legend className="text-xxl text-primary text-center">Registrar Idea</legend>
+          <legend className="text-center text-2xl lg:text-4xl font-title-text font-bold text-secondary mt-6 mb-4 p-5">Registrar Idea</legend>
   
           {/* Título de la propuesta */}
           <div className="space-y-1">

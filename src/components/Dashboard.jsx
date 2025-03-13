@@ -1,4 +1,5 @@
 import allInitiatives from "../assets/initiatives.js";
+import { Link } from "react-router-dom";
 
 export const Dashboard = ({ limit, initiatives = allInitiatives }) => {
   const displayedInitiatives = limit
@@ -29,13 +30,15 @@ export const Dashboard = ({ limit, initiatives = allInitiatives }) => {
                   <td className="px-4 py-3 text-center">{item.presented_by}</td>
                   <td className="px-4 py-3 text-center">{item.group}</td>
                   <td className="px-4 py-3 text-center">{item.date}</td>
-                    <td className="px-4 py-3 text-center">{item.estado}</td>
+                  <td className="px-4 py-3 text-center">{item.estado}</td>
                   <td className="px-4 py-3 text-center">
-                    <button
-                      className={`w-32 py-5 rounded-lg text-sm font-medium btn ${item.color}`}
-                    >
-                      {item.stage}
-                    </button>
+                    <Link to={`/selectedProposal/#`}>
+                      <button
+                        className={`w-32 py-5 rounded-lg text-sm font-medium btn ${item.color}`}
+                      >
+                        {item.stage}
+                      </button>
+                    </Link>
                   </td>
                 </tr>
               ))}
