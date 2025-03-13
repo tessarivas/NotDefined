@@ -32,7 +32,7 @@ const allInitiatives = [
     group: "MORENA",
     date: "2025/03/11",
     color: "btn-success",
-    stage: "Comision",
+    stage: "Comision Previa",
     estado: "En proceso",
   },
   {
@@ -140,7 +140,7 @@ const allInitiatives = [
     group: "PRI",
     date: "2025/03/03",
     color: "btn-primary",
-    stage: "Pleno",
+    stage: "Comision Previa",
     estado: "Finalizado",
   },
   {
@@ -200,7 +200,7 @@ const allInitiatives = [
     group: "MORENA",
     date: "2025/02/26",
     color: "btn-primary",
-    stage: "Comision",
+    stage: "Comision Previa",
     estado: "Finalizado",
   },
   {
