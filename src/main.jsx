@@ -7,6 +7,7 @@ import Home from './pages/home.jsx';
 import Iniciatives from './pages/Initiatives.jsx';
 import Legislators from './pages/Legislators.jsx';
 import Register from './pages/Register.jsx';
+import Login from './pages/Login.jsx';
 
 const root = document.getElementById("root");
 
@@ -19,6 +20,7 @@ createRoot(root).render(
                     <Route path="iniciatives" element={<Iniciatives />} />
                     <Route path="legislators" element={<Legislators />} />
                     <Route path="register" element={<Register />} />
+                    <Route path="login" element={<Login />} />
                 </Route>
             </Routes>
         </BrowserRouter>
