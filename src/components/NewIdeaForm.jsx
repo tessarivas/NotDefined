@@ -12,7 +12,7 @@ export const NewIdeaForm = () => {
         <span>Tutorial</span>
       </Link>
       <fieldset className="w-full max-w-3xl bg-base-100 shadow-lg rounded-box p-6 space-y-4 border border-base-300">
-        <legend className="text-xxl text-primary text-center text-title">
+        <legend className="text-center text-2xl lg:text-4xl font-title-text font-bold text-secondary mt-6 mb-4 p-5">
           Registrar mi idea
         </legend>
 
