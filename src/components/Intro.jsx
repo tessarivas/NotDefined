@@ -53,6 +53,10 @@ export const Intro = () => {
           </div>
         </div>
       </div>
+
+      <h2 className="text-4xl text-center text-neutral font-title-text pt-7 pb-5">
+        Últimas propuestas
+      </h2>
     </div>
   );
 };

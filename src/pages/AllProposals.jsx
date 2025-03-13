@@ -37,15 +37,15 @@ export const AllProposals = () => {
 
   return (
     <div className="container mx-auto px-4">
-      <h1 className="align-middle text-center text-2xl lg:text-4xl font-title-text font-bold text-secondary  mt-6 mb-4">
+      <h1 className="text-center text-2xl lg:text-4xl font-title-text font-bold text-secondary mt-6 mb-4 p-5">
         Todas las propuestas
       </h1>
-      <div className="ml-19 mr-19 flex mt-7 justify-between items-center gap-4 max-w-6xl mx-auto bg-white p-4 rounded-lg shadow-sm">
-        <div className="flex flex-1 items-center gap-4">
+      <div className="flex flex-col items-center gap-4 max-w-6xl mx-auto bg-white p-4 rounded-lg shadow-sm">
+        <div className="flex flex-col md:flex-row w-full justify-between items-center gap-4">
           <input
             type="text"
             placeholder="Buscar en todas las iniciativas..."
-            className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary h-10"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -55,7 +55,7 @@ export const AllProposals = () => {
               setSelectedLegislature(e.target.value);
               setCurrentPage(1);
             }}
-            className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+            className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-sm h-10"
           >
             <option value="all">Todas las legislaturas</option>
             {availableLegislatures.map((legislature) => (
@@ -66,7 +66,7 @@ export const AllProposals = () => {
           </select>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex-row w-full justify-between items-center gap-4">
           <div className="text-sm text-gray-600 whitespace-nowrap">
             Mostrando {Math.min(limit, filteredInitiatives.length)} de{" "}
             {filteredInitiatives.length} iniciativas
@@ -125,7 +125,7 @@ export const AllProposals = () => {
         >
           Siguiente
         </button>
-        <div className="ml-77 text-sm text-gray-600 whitespace-nowrap">
+        <div className="text-sm text-gray-600 whitespace-nowrap">
           Total: {filteredInitiatives.length} iniciativas
         </div>
       </div>
