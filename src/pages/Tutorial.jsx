@@ -19,8 +19,8 @@ const theme = createTheme({
       dark: "#1b5e20", // Verde más oscuro
     },
     text: {
-      primary: "#1b5e20",
-      secondary: "#388e3c",
+      primary: "#000",
+      secondary: "#000",
     },
     background: {
       default: "#f1f8e9",
@@ -60,12 +60,12 @@ const theme = createTheme({
 
 const Tutorial = () => {
   const stageColors = {
-    Idea: "#f87272", // btn-error
-    "Mesa directiva": "#fbbd23", // btn-warning
-    "Comision Previa": "#36d399", // btn-success
-    Juridico: "#570df8", // btn-primary
-    Comision: "#3abff8", // btn-info
-    Pleno: "#e5e5e5", // btn-neutral
+    Idea: "#f44336", // error
+    "Mesa directiva": "#ff9800", // warning
+    "Comision Previa": "#4caf50", // success
+    Juridico: "#3f51b5", // primary
+    Comision: "#00bcd4", // info
+    Pleno: "#e040fb", // accent
   };
   const steps = [
     {
@@ -173,12 +173,19 @@ const Tutorial = () => {
         >
           {steps.map((step, index) => (
             <Step key={index} active={true}>
-              <StepLabel>
+              <StepLabel
+                StepIconProps={{
+                  style: { color: stageColors[step.stage] },
+                }}
+              >
                 <Typography
                   variant="h6"
                   sx={{
                     color: stageColors[step.stage],
                     fontWeight: 600,
+                    "&:hover": {
+                      color: "primary.main",
+                    },
                   }}
                 >
                   {step.label}
@@ -229,7 +236,7 @@ const Tutorial = () => {
         </Stepper>
 
         <Box sx={{ mt: 6 }}>
-          <Paper elevation={2} sx={{ p: 4, backgroundColor: "#f5f5f5" }}>
+          <Paper elevation={2} sx={{ p: 4, backgroundColor: "bg-primary" }}>
             <Typography variant="body1" paragraph>
               Recuerde que una iniciativa bien estructurada tiene más
               probabilidades de ser considerada y aprobada. Tome el tiempo

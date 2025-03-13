@@ -16,7 +16,7 @@ export const Hero = () => {
 
       <div className="relative flex flex-col items-center justify-center h-full text-center text-neutral-content">
         <h1 className="mb-5 text-7xl font-bold drop-shadow-lg font-title-text">
-          Blockchain para una Legislación Transparente
+          Transparencia y Conexión Legislativa
         </h1>
         <p className="mb-5 text-2xl drop-shadow-lg font-regular-text">
           Transparencia en cada paso: sigue el camino de tu iniciativa.
