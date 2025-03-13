@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 export const RegisterForm = () => {
   const [isValid, setIsValid] = useState(true);
+  const navigate = useNavigate();
 
   const validarNombre = (e) => {
     const regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(?: [A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$/;
@@ -19,6 +21,13 @@ export const RegisterForm = () => {
     const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
     const valor = e.target.value;
     setIsValid(valor.length >= 8 && regex.test(valor));
+};
+
+const manejarRegistro = (e) => {
+  e.preventDefault(); // Evita el envío del formulario por defecto
+  if (isValid) {
+    navigate("/login"); // Cambia "/dashboard" por la ruta a donde quieras ir
+  }
 };
 
   return (
@@ -68,7 +77,7 @@ export const RegisterForm = () => {
           <br /> Minimo una letra mayuscula
         </p>
       )}
-      <button className="btn btn-neutral mt-4">Registrarme</button>
+      <button className="btn btn-neutral mt-4" onClick={manejarRegistro}>Registrarme</button>
     </fieldset>
   );
 };

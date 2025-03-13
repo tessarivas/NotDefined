@@ -9,7 +9,7 @@ function Home() {
     <>
       <Hero />
       <Intro />
-      <Dashboard />
+      <Dashboard limit={6} />
       <Metrics />
       <Outlet />
     </>
