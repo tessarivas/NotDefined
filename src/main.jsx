@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css'
 import App from './App.jsx'
 import Home from './pages/home.jsx';
-import Proposals from './pages/Proposals.jsx';
-import RegisterIdeas from './pages/RegisterIdea.jsx';
+import Proposals from './pages/AllProposals.jsx';
+import RegisterIdeas from './pages/IdeaRegister.jsx';
 import Register from './pages/Register.jsx';
 import Login from './pages/Login.jsx';
 
