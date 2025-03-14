@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import BannerPicture from "../assets/Images/BannerPicture.jpg"; 
+import BannerPicture from "../assets/Images/BannerPicture.jpg";
 
 export const Hero = () => {
   const height = "500px";
@@ -19,7 +19,7 @@ export const Hero = () => {
           Transparencia y Conexión Legislativa
         </h1>
         <p className="mb-5 text-2xl drop-shadow-lg font-regular-text">
-          Transparencia en cada paso: sigue el camino de tu iniciativa.
+          Acercando al congreso y la ciudadania.
         </p>
         <Link
           to={isLoggedIn ? "/registerIdeas" : "/register"}

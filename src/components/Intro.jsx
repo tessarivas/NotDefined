@@ -1,9 +1,24 @@
-import { FaVoteYea, FaFileAlt, FaHandshake, FaLightbulb, FaUsers, FaGavel, FaBalanceScale, FaFlag } from "react-icons/fa";
+import {
+  FaVoteYea,
+  FaFileAlt,
+  FaHandshake,
+  FaLightbulb,
+  FaUsers,
+  FaGavel,
+  FaBalanceScale,
+  FaFlag,
+} from "react-icons/fa";
 
 export const Intro = () => {
   return (
     <div className="hero min-h-[50vh] lg:min-h-[40vh] flex flex-col justify-center items-center gap-8 pt-5">
       {/* Íconos informativos */}
+      <div>
+        <p className="pt-5 text-accent mb-2 text-xl drop-shadow-lg font-accent-text">
+          Plataforma administrada por el Congreso para facilitar la creación y
+          visibilidad de propuestas ciudadanas y legislativas
+        </p>
+      </div>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-12 text-secondary font-accent-text text-lg lg:text-xl">
         <span className="flex items-center gap-3">
           <FaVoteYea className="text-primary text-3xl" />
@@ -15,7 +30,7 @@ export const Intro = () => {
         </span>
         <span className="flex items-center gap-3">
           <FaHandshake className="text-primary text-3xl" />
-          Súmate a la transparencia
+          Ciudadanos y diputados unidos
         </span>
       </div>
 
@@ -33,11 +48,15 @@ export const Intro = () => {
           </div>
           <div className="relative flex flex-col items-center gap-2">
             <FaUsers className="text-warning text-4xl" />
-            <span className="text-lg font-bold text-warning">Mesa Directiva</span>
+            <span className="text-lg font-bold text-warning">
+              Mesa Directiva
+            </span>
           </div>
           <div className="relative flex flex-col items-center gap-2">
             <FaBalanceScale className="text-success text-4xl" />
-            <span className="text-lg font-bold text-success">Comisión Previa</span>
+            <span className="text-lg font-bold text-success">
+              Comisión Previa
+            </span>
           </div>
           <div className="relative flex flex-col items-center gap-2">
             <FaGavel className="text-primary text-4xl" />

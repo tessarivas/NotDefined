@@ -5,7 +5,7 @@ const allInitiatives = [
       "Por el que se reforma la fracción VII del artículo 27 de la Ley para Prevenir y Erradicar la Discriminación en el Estado de Baja California",
     type: "Iniciativa de Reforma",
     presented_by: "Adrian Humberto Valle Ballesteros",
-    group: "PRI",
+    group: "Ciudadana",
     date: "2025/03/13",
     color: "btn-error",
     stage: "Idea",

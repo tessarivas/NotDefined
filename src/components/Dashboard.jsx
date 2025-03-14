@@ -32,7 +32,7 @@ export const Dashboard = ({ limit, initiatives = allInitiatives }) => {
                   <td className="px-4 py-3 text-center">{item.date}</td>
                   <td className="px-4 py-3 text-center">{item.estado}</td>
                   <td className="px-4 py-3 text-center">
-                    <Link to={`/selectedProposal/#`}>
+                    <Link to={`/selectedProposal/${index + 1}`}>
                       <button
                         className={`w-32 py-5 rounded-lg text-sm font-medium btn ${item.color}`}
                       >

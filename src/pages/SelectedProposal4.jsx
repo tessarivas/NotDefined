@@ -10,12 +10,12 @@ import {
 export default function SelectedProposal() {
   const selectedInitiative = {
     description:
-      "Por el que se reforman y adicionan diversas disposiciones de la Ley de Protección al Ambiente para el Estado de Baja California",
+      "Por el que se reforma el artículo 7 de la Ley de Fomento a la Competitividad y Desarrollo Económico para el Estado de Baja California	",
     type: "Iniciativa de Reforma",
-    presented_by: "Julio César Vázquez Castillo",
-    group: "PT",
-    date: "2025/03/13",
-    stage: "Comisión", // Etapa actual
+    presented_by: "Sandra Alejandrina Corral Quintero",
+    group: "PAN",
+    date: "2025/03/10",
+    stage: "Jurídico", // Etapa actual
     pdf_link:
       "https://www.congresobc.gob.mx/Documentos/ProcesoParlamentario/Iniciativas/20250313_INICIATIVA%2019DIP.%20VALLE%20ART.%2027%20LEY%20DISCRIMINACION.PDF", // Enlace al PDF
   };
